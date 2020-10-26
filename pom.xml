@@ -10,6 +10,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.jdk>1.8</version.jdk>
+        <version.webxml>30</version.webxml>
         <maven.compiler.source>${version.jdk}</maven.compiler.source>
         <maven.compiler.target>${version.jdk}</maven.compiler.target>
 	    
