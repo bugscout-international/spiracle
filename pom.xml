@@ -13,9 +13,10 @@
         <maven.compiler.source>${version.jdk}</maven.compiler.source>
         <maven.compiler.target>${version.jdk}</maven.compiler.target>
 	    
-		<maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+		<bugscoutSource>bug-iast-demo-dummy</bugscoutSource>
 		<bugscout-iast-maven-plugin.version>1.0.1-SNAPSHOT</bugscout-iast-maven-plugin.version>
-		<bugscoutSource>bugscout-spiracle</bugscoutSource>
+		<maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     </properties>
 
     <build>
@@ -136,10 +137,6 @@
 											<message>You must set a bugscoutUrl property (-DbugscoutUrl=...)!</message>
 										</requireProperty>
 										<requireProperty>
-											<property>bugscoutProjectKey</property>
-											<message>You must set a bugscoutProjectKey property (-DbugscoutProjectKey=...)!</message>
-										</requireProperty>
-										<requireProperty>
 											<property>bugscoutUsername</property>
 											<message>You must set a bugscoutUsername property (-DbugscoutUsername=...)!</message>
 										</requireProperty>
@@ -168,7 +165,7 @@
 								<configuration>
 									<url>${bugscoutUrl}</url>
 									<source>${bugscoutSource}</source>
-									<projectKey>${bugscoutProjectKey}</projectKey>
+									<projectKey>${bugscoutSource}-${maven.build.timestamp}</projectKey>
 									<username>${bugscoutUsername}</username>
 									<password>${bugscoutPassword}</password>
 									<rules>${bugscoutRules}</rules>
