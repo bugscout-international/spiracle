@@ -1,4 +1,4 @@
-= Spiracle
+# Spiracle #
 
 Spiracle is an insecure web application used to test system security controls. 
 
