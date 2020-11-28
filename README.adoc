@@ -25,7 +25,7 @@ Your mileage may vary with other application servers.
 
 * Download pre-built `spiracle.war` file from the releases page: https://github.com/waratek/spiracle/releases
 
-=== Tomcat
+### Tomcat
 
 * Copy the war file to the `$CATALINA_HOME/webapps/` directory.
 
