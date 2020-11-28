@@ -21,11 +21,11 @@ This application has been tested on the following application servers:
 
 Your mileage may vary with other application servers.
 
-== Installation
+## Installation
 
 * Download pre-built `spiracle.war` file from the releases page: https://github.com/waratek/spiracle/releases
 
-=== Tomcat
+### Tomcat
 
 * Copy the war file to the `$CATALINA_HOME/webapps/` directory.
 
