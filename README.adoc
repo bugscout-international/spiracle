@@ -29,7 +29,7 @@ Your mileage may vary with other application servers.
 
 * Copy the war file to the `$CATALINA_HOME/webapps/` directory.
 
-=== Liberty Core
+### Liberty Core
 
 * Ensure that the application war file is extracted to your server's apps directory:
 +
@@ -66,11 +66,11 @@ $ jar xvf /path/to/downloaded/spiracle.war
 <3> Change `httpSession` parameter length 
 <4> Add a `host` attribute
 
-=== Database setup
+### Database setup
 
 If you would like to run the SQL injection tests, the database should be populated as follows. Data files are available in the web applications `spiracle/conf/` directory after the `spiracle.war` file has been deployed and exploded.
 
-==== Oracle
+### Oracle
 
 . Ensure that the link:http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html[Oracle Database JDBC Driver] (ojdbc6.jar) is installed in the applications `WEB-INF/lib/` directory after the `spiracle.war` file is exploded on first run.
 . Import the data:
